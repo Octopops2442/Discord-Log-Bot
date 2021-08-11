@@ -1,5 +1,6 @@
 import discord
 import datetime
+import os
 from discord.ext import commands
 
 intents = discord.Intents.default()
@@ -38,4 +39,4 @@ async def on_message(message):
         f.close()
 
 
-client.run('ODc0NjI1ODQzODQ5MjI0MjEy.YRJsyg.yqq2fbSPT71K1uj9ag3zl0jgjzw')
+client.run(os.environ['Discord_Token'])
