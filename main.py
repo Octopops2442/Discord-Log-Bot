@@ -19,7 +19,7 @@ async def on_ready():
 
 @client.command()
 async def gName(ctx):
-    await ctx.send(client.get_guild)
+    await ctx.send(client.get_guild(758354362249510923))
 
 @client.event
 async def on_message(message):
